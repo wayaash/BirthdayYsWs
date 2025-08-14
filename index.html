@@ -5,367 +5,110 @@
   <title>Yash Raghuwanshi • Birthday RSVP (31 Aug 2025)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="RSVP for Yash Raghuwanshi's birthday party on 31 August 2025 at Godavari Greens Colony, Vidisha." />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg: #0f172a;        /* slate-900 */
-      --card: #111827;      /* gray-900 */
-      --muted: #94a3b8;     /* slate-400 */
-      --text: #e5e7eb;      /* gray-200 */
-      --accent: #22c55e;    /* green-500 */
-      --accent2: #60a5fa;   /* blue-400 */
-      --danger: #ef4444;    /* red-500 */
-      --ring: rgba(96,165,250,.5);
-    }
-    * { box-sizing: border-box }
-    html, body { height: 100% }
-    body {
-      margin: 0;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
-      background: radial-gradient(1200px 800px at 80% -10%, #1f2937 0, var(--bg) 60%);
-      color: var(--text);
-      line-height: 1.5;
-      display: grid;
-      place-items: center;
-      padding: 24px;
-    }
-    .wrap {
-      width: 100%;
-      max-width: 860px;
-      display: grid;
-      gap: 20px;
-      grid-template-columns: 1fr;
-    }
-    @media (min-width: 880px) {
-      .wrap { grid-template-columns: 1.1fr .9fr }
-    }
-    .card {
-      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.35);
-    }
-    header.card {
-      padding: 22px 22px 10px;
-    }
-    header h1 {
-      margin: 0 0 6px;
-      font-size: clamp(22px, 2.6vw, 32px);
-      letter-spacing: .2px;
-    }
-    header p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-    }
-    .info {
-      padding: 18px 22px 22px;
-      display: grid;
-      gap: 10px;
-    }
-    .badge {
-      display: inline-block;
-      font-size: 12px;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: rgba(96,165,250,.12);
-      border: 1px solid rgba(96,165,250,.3);
-      color: #dbeafe;
-    }
-    .grid {
-      display: grid; gap: 10px;
-    }
-    @media (min-width: 560px) {
-      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)) }
-    }
-    .line {
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.1);
-      border-radius: 12px;
-      padding: 12px 14px;
-      display: flex; align-items: center; gap: 10px;
-      font-size: 14px;
-    }
-    .line strong { font-weight: 600; }
-    a.link {
-      color: #bfdbfe;
-      text-decoration: none;
-      border-bottom: 1px dashed rgba(191,219,254,.6);
-    }
-    form.card { padding: 22px; }
-    label { font-weight: 600; font-size: 14px; }
-    .field { display: grid; gap: 6px; margin-bottom: 14px; }
-    input[type="text"], input[type="tel"], textarea, select {
-      width: 100%;
-      background: rgba(255,255,255,.04);
-      color: var(--text);
-      border: 1px solid rgba(255,255,255,.14);
-      border-radius: 12px;
-      padding: 12px 14px;
-      font: inherit;
-      outline: none;
-      transition: border .15s, box-shadow .15s, transform .02s;
-    }
-    input:focus, textarea:focus, select:focus {
-      border-color: var(--accent2);
-      box-shadow: 0 0 0 4px var(--ring);
-    }
-    .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
-    .radio {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 8px 12px; border-radius: 999px;
-      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12);
-      cursor: pointer; user-select: none;
-    }
-    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
-    button {
-      appearance: none; border: none; cursor: pointer;
-      padding: 12px 16px; border-radius: 12px; font-weight: 700;
-      transition: transform .02s ease-in-out, box-shadow .2s;
-    }
-    button:active { transform: translateY(1px) }
-    .primary {
-      background: linear-gradient(180deg, #34d399, #10b981);
-      color: #052e1a; box-shadow: 0 10px 18px rgba(16,185,129,.25);
-    }
-    .ghost {
-      background: rgba(255,255,255,.06);
-      color: var(--text);
-      border: 1px solid rgba(255,255,255,.14);
-    }
-    .danger {
-      background: linear-gradient(180deg, #f87171, #ef4444);
-      color: #2b0b0b;
-    }
-    .small { font-size: 12px; color: var(--muted) }
-    .ok { color: #86efac; }
-    .err { color: var(--danger); }
-    .notice {
-      margin-top: 8px; padding: 10px 12px; border-radius: 12px;
-      background: rgba(16,185,129,.08); border: 1px solid rgba(16,185,129,.25);
-      display: none;
-    }
-    .table {
-      width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 10px;
-    }
-    .table th, .table td {
-      padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,.08);
-      text-align: left;
-    }
-    footer {
-      margin-top: 10px; text-align: center; color: var(--muted); font-size: 12px;
-    }
+    body { font-family: sans-serif; background:#111; color:#eee; display:grid; place-items:center; padding:20px; }
+    .card { background:#222; padding:20px; border-radius:12px; max-width:600px; width:100%; }
+    label { display:block; margin-top:10px; }
+    input,select,textarea { width:100%; padding:8px; margin-top:4px; border-radius:8px; border:1px solid #444; background:#333; color:#eee; }
+    button { margin-top:14px; padding:10px 16px; border:none; border-radius:8px; background:#10b981; font-weight:700; cursor:pointer; }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <section class="card">
-      <header class="card">
-        <span class="badge">Birthday Party</span>
-        <h1>Yash Raghuwanshi • RSVP</h1>
-        <p>Please respond so we can plan food & seating. It takes 10 seconds.</p>
-      </header>
-      <div class="info">
-        <div class="grid">
-          <div class="line"><strong>Date:</strong>&nbsp; Sun, 31 August 2025 • 6:30 PM onwards</div>
-          <div class="line"><strong>Dress code:</strong>&nbsp; Smart casual / festive</div>
-          <div class="line">
-            <strong>Venue:</strong>&nbsp; Godavari Greens Colony, Vidisha
-          </div>
-          <div class="line">
-            <strong>Map:</strong>&nbsp;
-            <a class="link" href="https://www.google.com/maps/search/?api=1&query=Godavari%20Greens%20Colony%20Vidisha"
-               target="_blank" rel="noopener">Open in Google Maps</a>
-          </div>
-        </div>
-        <p class="small">If you can’t make it, please mark “Not coming” so we don’t over-plan. Thanks!</p>
-      </div>
-    </section>
+  <div class="card">
+    <h1>🎉 RSVP for Yash’s Birthday</h1>
+    <p>Sun, 31 August 2025 • 6:30 PM • Godavari Greens Colony, Vidisha</p>
+    <form id="rsvpForm">
+      <label>Your full name *</label>
+      <input name="name" required />
 
-    <form id="rsvpForm" class="card" novalidate>
-      <div class="field">
-        <label for="name">Your full name <span aria-hidden="true" class="err">*</span></label>
-        <input id="name" name="name" type="text" placeholder="e.g., Priya Sharma" required maxlength="80" />
-      </div>
+      <label>Are you coming? *</label>
+      <select name="status" required>
+        <option value="">-- Select --</option>
+        <option>Coming</option>
+        <option>Not coming</option>
+        <option>Maybe</option>
+      </select>
 
-      <div class="field">
-        <label>Are you coming? <span aria-hidden="true" class="err">*</span></label>
-        <div class="row" role="radiogroup" aria-label="Attendance">
-          <label class="radio"><input type="radio" name="status" value="Coming" required> Coming</label>
-          <label class="radio"><input type="radio" name="status" value="Not coming" required> Not coming</label>
-          <label class="radio"><input type="radio" name="status" value="Maybe" required> Maybe</label>
-        </div>
-      </div>
+      <label>Guests (including you)</label>
+      <select name="guests">
+        <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+      </select>
 
-      <div class="field">
-        <label for="guests">How many with you? (including you)</label>
-        <select id="guests" name="guests">
-          <option value="1" selected>1</option>
-          <option>2</option><option>3</option><option>4</option><option>5+</option>
-        </select>
-      </div>
+      <label>Phone (optional)</label>
+      <input name="phone" placeholder="+91..." />
 
-      <div class="field">
-        <label for="phone">Phone (optional)</label>
-        <input id="phone" name="phone" type="tel" inputmode="numeric" pattern="[0-9\s+-]{7,}" placeholder="+91 9xxxxxxxxx" />
-        <span class="small">Used only if plans change.</span>
-      </div>
+      <label>Message (optional)</label>
+      <textarea name="note"></textarea>
 
-      <div class="field">
-        <label for="note">Message for Yash (optional)</label>
-        <textarea id="note" name="note" rows="3" placeholder="Any dietary notes, timing, wishes, etc."></textarea>
-      </div>
-
-      <div class="actions">
-        <button type="submit" class="primary">Submit RSVP</button>
-        <button type="button" class="ghost" id="downloadCsvBtn" title="Download all saved RSVPs as CSV">Download RSVPs (CSV)</button>
-        <button type="button" class="ghost" id="viewListBtn">View Saved List</button>
-        <button type="button" class="danger" id="clearAllBtn" title="Clears only this browser's saved RSVPs">Clear Saved Here</button>
-      </div>
-
-      <div id="alert" class="notice"></div>
-
-      <div id="listWrap" style="display:none; margin-top:14px;">
-        <table class="table" id="rsvpTable" aria-label="Saved RSVPs">
-          <thead>
-            <tr><th>Name</th><th>Status</th><th>Guests</th><th>Phone</th><th>Note</th><th>Time</th></tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-
-      <p class="small">Your response is saved in your browser. To collect centrally, host this file online and periodically download the CSV.</p>
+      <button type="submit">Submit RSVP</button>
     </form>
-
-    <footer>
-      Venue: Godavari Greens Colony, Vidisha • Date: 31 Aug 2025
-    </footer>
+    <div id="msg"></div>
   </div>
 
   <script>
-    const form = document.getElementById('rsvpForm');
-    const alertBox = document.getElementById('alert');
-    const tableBody = document.querySelector('#rsvpTable tbody');
-    const listWrap = document.getElementById('listWrap');
-
-    const LS_KEY = 'yash_rsvp_2025';
-
-    function loadAll() {
-      try { return JSON.parse(localStorage.getItem(LS_KEY)) || []; }
-      catch { return []; }
-    }
-    function saveAll(data) {
-      localStorage.setItem(LS_KEY, JSON.stringify(data));
-    }
-    function nowISO() {
-      const d = new Date();
-      return d.toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' });
-    }
-    function showAlert(msg, ok = true) {
-      alertBox.style.display = 'block';
-      alertBox.textContent = msg;
-      alertBox.style.background = ok ? 'rgba(16,185,129,.08)' : 'rgba(239,68,68,.08)';
-      alertBox.style.borderColor = ok ? 'rgba(16,185,129,.25)' : 'rgba(239,68,68,.25)';
-    }
-    function clearAlert() {
-      alertBox.style.display = 'none';
-      alertBox.textContent = '';
-    }
-    function renderTable() {
-      const rows = loadAll();
-      tableBody.innerHTML = rows.map(r => `
-        <tr>
-          <td>${escapeHtml(r.name)}</td>
-          <td>${escapeHtml(r.status)}</td>
-          <td>${escapeHtml(r.guests)}</td>
-          <td>${escapeHtml(r.phone || '')}</td>
-          <td>${escapeHtml(r.note || '')}</td>
-          <td>${escapeHtml(r.time)}</td>
-        </tr>
-      `).join('');
-    }
-    function escapeHtml(s) {
-      return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
-    }
-    function toCSV(rows) {
-      const head = ['Name','Status','Guests','Phone','Message','Time'];
-      const esc = v => `"${String(v ?? '').replace(/"/g,'""')}"`;
-      const lines = [head.join(',')].concat(rows.map(r => [
-        esc(r.name), esc(r.status), esc(r.guests), esc(r.phone || ''), esc(r.note || ''), esc(r.time)
-      ].join(',')));
-      return lines.join('\r\n');
-    }
-    function download(filename, text) {
-      const a = document.createElement('a');
-      a.href = URL.createObjectURL(new Blob([text], {type:'text/csv;charset=utf-8;'}));
-      a.download = filename;
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      setTimeout(() => URL.revokeObjectURL(a.href), 2000);
-    }
-
-    form.addEventListener('submit', e => {
+    document.getElementById("rsvpForm").addEventListener("submit", async e => {
       e.preventDefault();
-      clearAlert();
+      const data = Object.fromEntries(new FormData(e.target).entries());
+      data.time = new Date().toISOString();
 
-      const name = form.name.value.trim();
-      const status = (form.status.value || '').trim();
-      const guests = form.guests.value;
-      const phone = form.phone.value.trim();
-      const note = form.note.value.trim();
-
-      if (!name) { showAlert('Please enter your name.', false); form.name.focus(); return; }
-      if (!status) { showAlert('Please choose if you are coming or not.', false); return; }
-
-      const entry = { name, status, guests, phone, note, time: nowISO() };
-      const all = loadAll();
-
-      // Avoid duplicates by name + status within the last 5 minutes
-      const recent = all.find(r => r.name.toLowerCase() === name.toLowerCase() && r.status === status);
-      if (recent) {
-        showAlert('We already have your latest response. Updated time saved.', true);
-        recent.guests = guests; recent.phone = phone; recent.note = note; recent.time = nowISO();
-        saveAll(all);
-      } else {
-        all.push(entry);
-        saveAll(all);
-        showAlert('Thanks! Your RSVP has been recorded.');
-      }
-
-      renderTable();
-      listWrap.style.display = 'block';
-
-      // Optional: open WhatsApp compose (uncomment and add a phone number)
-      // const hostNumber = '91XXXXXXXXXX';
-      // const msg = `RSVP: ${name} • ${status} • Guests: ${guests} • Phone: ${phone || '-'} • Note: ${note || '-'}`;
-      // window.open(`https://wa.me/${hostNumber}?text=${encodeURIComponent(msg)}`, '_blank');
-      
-      form.reset();
-    });
-
-    document.getElementById('downloadCsvBtn').addEventListener('click', () => {
-      const rows = loadAll();
-      if (!rows.length) { showAlert('No RSVPs saved yet on this device.', false); return; }
-      download('yash-birthday-rsvps-31-aug-2025.csv', toCSV(rows));
-    });
-
-    document.getElementById('viewListBtn').addEventListener('click', () => {
-      renderTable();
-      listWrap.style.display = (listWrap.style.display === 'none' || !listWrap.style.display) ? 'block' : 'none';
-    });
-
-    document.getElementById('clearAllBtn').addEventListener('click', () => {
-      if (confirm('Clear RSVPs saved in this browser?')) {
-        localStorage.removeItem(LS_KEY);
-        renderTable();
-        showAlert('Cleared locally. (Does not affect other devices.)');
+      try {
+        const res = await fetch("http://localhost:5000/rsvp", {
+          method:"POST",
+          headers:{"Content-Type":"application/json"},
+          body:JSON.stringify(data)
+        });
+        const out = await res.json();
+        document.getElementById("msg").textContent = out.success ? "✅ Saved to server!" : "⚠️ Error: " + out.error;
+      } catch (err) {
+        document.getElementById("msg").textContent = "❌ Could not reach server.";
       }
     });
-
-    // Initial paint if anything already saved
-    renderTable();
   </script>
+
+  <!-- 
+  ===========================
+  SERVER CODE (server.js)
+  ===========================
+  Save this part as server.js and run with: 
+      npm install express cors body-parser sqlite3
+      node server.js
+  ---------------------------
+  const express = require("express");
+  const cors = require("cors");
+  const bodyParser = require("body-parser");
+  const sqlite3 = require("sqlite3").verbose();
+
+  const app = express();
+  const PORT = 5000;
+
+  app.use(cors());
+  app.use(bodyParser.json());
+
+  const db = new sqlite3.Database("./rsvps.db");
+  db.run(\`CREATE TABLE IF NOT EXISTS rsvps (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT, status TEXT, guests TEXT, phone TEXT, note TEXT, time TEXT
+  )\`);
+
+  app.post("/rsvp", (req,res) => {
+    const { name, status, guests, phone, note, time } = req.body;
+    if(!name || !status) return res.json({success:false, error:"Name and status required"});
+    db.run("INSERT INTO rsvps (name,status,guests,phone,note,time) VALUES (?,?,?,?,?,?)",
+      [name,status,guests,phone,note,time],
+      function(err){ 
+        if(err) return res.json({success:false, error:"DB insert failed"});
+        res.json({success:true, id:this.lastID});
+      });
+  });
+
+  app.get("/rsvps", (req,res) => {
+    db.all("SELECT * FROM rsvps ORDER BY id DESC", [], (err,rows) => {
+      if(err) return res.json({success:false,error:"DB read failed"});
+      res.json(rows);
+    });
+  });
+
+  app.listen(PORT, ()=>console.log("✅ Server running at http://localhost:"+PORT));
+  -->
 </body>
 </html>
